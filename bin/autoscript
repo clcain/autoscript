@@ -1,6 +1,6 @@
 #!/bin/bash
 
-logfile="$HOME/autoscript.log"
+logfile="$HOME/.autoscript.log"
 autoscript_dir="$HOME/autoscript.d"
 
 rm -f $logfile
