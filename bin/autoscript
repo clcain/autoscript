@@ -7,7 +7,7 @@ logfile="$HOME/autoscript.log"
 
 mkdir -p $autoscript_dir
 
-echo "[$(date -Iseconds)] Starting autoscript..." > $logfile
+echo "[$(date -Iseconds)] Autoscript has started." > $logfile
 
 while true
 do
