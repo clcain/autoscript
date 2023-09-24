@@ -1,23 +1,20 @@
 #!/bin/bash
 
-logfile="$HOME/.autoscript.log"
-autoscript_dir="$HOME/autoscript.d"
+run_interval=60
 
-rm -f $logfile
-touch $logfile
+autoscript_dir="$HOME/autoscript.d"
+logfile="$HOME/autoscript.log"
 
 mkdir -p $autoscript_dir
 
 echo "[$(date -Iseconds)] Starting autoscript..." > $logfile
-echo >> $logfile
 
 while true
 do
     for f in $(ls $autoscript_dir)
     do
         echo "[$(date -Iseconds)] Running $f..." >> $logfile
-        bash $autoscript_dir/$f &>> $logfile
-        echo >> $logfile
+        ./$autoscript_dir/$f &>> $logfile
     done
-    sleep 5
+    sleep $run_interval
 done
