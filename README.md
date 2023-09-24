@@ -1,6 +1,6 @@
 # autoscript
 
-Autoscript is an automatic script running daemon.
+Autoscript is an automatic script running daemon for Linux machines running Gnome.
 
 ## Usage
 
