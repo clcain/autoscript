@@ -1,7 +1,19 @@
+# autoscript
+
+Autoscript is an automatic script running daemon.
+
 ## Usage
 
-Install Autoscript with `./install.sh`.
+Place any scripts you would like to run in `~/autoscript.d/`. Log out and log back in.
 
-Place any scripts you would like to run as a bash script in `~/autoscript.d/`.
+View the log with:
 
-View the Autoscipt log at `~/autoscript.log`.
+```
+tail -f ~/autoscript.log
+```
+
+## Installation
+
+```
+make install
+```
